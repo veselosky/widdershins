@@ -18,9 +18,9 @@ The environment provides five core capabilities:
 
 ### Four architectural principles
 
-**1. Local ownership, global connectivity** -- Each installation owns its users' content and data. Federation provides connectivity without requiring a central service.
-**2. Content-type neutrality** -- A photograph, bookmark, blog post, video, and status update are different representations of a common concept: something a person wants to preserve or share. They shouldn't require separate sites, separate accounts, or separate social graphs.
-**3. Social interaction without engagement manipulation** -- Chronological feeds, explicit subscriptions, user-controlled filters, and transparent discovery. No algorithmic feed whose primary objective is maximizing time spent on the platform. Spend as much time as you want here. Then go touch grass.
-**4. Progressive adoption** -- A personal space should be useful from day one. Features can be enabled individually, as you need them.
+1. **Local ownership, global connectivity** -- Each installation owns its users' content and data. Federation provides connectivity without requiring a central service.
+2. **Content-type neutrality** -- A photograph, bookmark, blog post, video, and status update are different representations of a common concept: something a person wants to preserve or share. They shouldn't require separate sites, separate accounts, or separate social graphs.
+3. **Social interaction without engagement manipulation** -- Chronological feeds, explicit subscriptions, user-controlled filters, and transparent discovery. No algorithmic feed whose primary objective is maximizing time spent on the platform. Spend as much time as you want here. Then go touch grass.
+4. **Progressive adoption** -- A personal space should be useful from day one. Features can be enabled individually, as you need them.
 
-[Developer Documentation](docs/developer/index.md)
+[Developer Documentation](developer/index.md)
