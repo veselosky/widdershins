@@ -1,0 +1,58 @@
+[project]
+name = "widdershins"
+version = "0.1.0"
+description = "Widdershins owner's suite"
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.1,<7.0",
+    "django-environ>=0.14.0",
+    "django-extensions>=4.1",
+    "docutils>=0.23",
+    "pillow>=12.3.0",
+    "rich>=15.0.0",
+    "granian>=2.8.4",
+    "django-storages>=1.14.6",
+]
+
+[dependency-groups]
+dev = [
+    "coverage>=7.16.2",
+    "django-debug-toolbar>=8.0.0",
+    "djlint>=1.46.4",
+    "ipython>=9.17.1",
+    "pre-commit>=4.6.2",
+    "ruff>=0.16.10",
+    "tox>=4.64.8",
+    "tox-uv>=1.36.1",
+    "uv-bump>=0.6.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "UP",   # pyupgrade
+    "DJ",   # flake8-django
+    "LOG",  # flake8-logging
+    "T20",  # flake8-print
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"*/migrations/*" = ["E501"]
+"manage.py" = ["E402"]
+"*/celery.py" = ["T201"]  # Allow print in debug tasks
+
+# [tool.ruff.lint.isort]
+# Replace "project_name" with the actual project package name
+# known-first-party = ["project_name"]
